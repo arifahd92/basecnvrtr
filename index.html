@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAse CONVERTER</title>
+    <script defer src="base.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+   <div class="cont">
+     <h3>Number Base Converter </h3>
+
+     <label for="base2" id="lbase2">From</label>
+     <select name="base2" id="base2">
+        <option value="16">HexaDecimal</option>
+        <option value="10">Decimal</option>
+        <option value="8">Octal</option>
+        <option value="2">Binary</option>
+    </select>
+     <input id="inpt" type="text" placeholder="INPUT  FIELD" min="0" >
+     <label for="base" id="lbase">To</label>
+     <select name="base" id="base">
+        <option value="16">HexaDecimal</option>
+        <option value="10">Decimal</option>
+        <option value="8">Octal</option>
+        <option value="2">Binary</option>
+     </select>
+
+      <button id="btn">Convert</button>
+
+      <div id="res">result will be displayed here</div>
+   </div>
+
+</body>
+</html>

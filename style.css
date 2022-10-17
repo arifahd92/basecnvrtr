@@ -1,0 +1,226 @@
+
+    *{
+        margin: 0px; padding: 0px;
+        background-color: black;
+        font-size: 1.6vw;
+    }
+    .cont{
+        position: relative;
+        top: 10vh;
+        height: 80vh;
+        width: 50vw;
+        background-color: rgb(175, 203, 36);
+        margin: auto;
+    }
+    h3{
+        position: absolute;
+        left:8vw ;
+        top: 3vh;
+        border: 3px solid red;
+        background-color: aliceblue;
+        height: 7vh;
+        width: 35vw;
+       box-sizing: border-box;
+       border-radius: 23px;
+       display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+       
+    }
+   #inpt{ 
+        position: absolute;
+        left:8vw ;
+        top: 27.5vh;
+        border: 3px solid red;
+       background-color: aliceblue;
+       height: 7vh;
+        width: 35vw;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #linpt{ 
+        position: absolute;
+        left:13vw ;
+        top: 23.5vh;
+        background-color: rgb(175, 203, 36);
+        font-weight: bold;
+      
+    }
+  
+    #base2{
+        position: absolute;
+        left:8vw ;
+        top: 15vh;
+        border: 3px solid red;
+        border-radius: 20px;
+       background-color: aliceblue;
+       height: 7vh;
+        width: 35vw;
+        cursor: pointer;
+        font-weight: bold;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #lbase2{
+        position: absolute;
+        left:22vw ;
+        top: 11.5vh;
+        background-color: rgb(175, 203, 36);
+        font-weight: bold;
+      
+    }
+    #base{
+        position: absolute;
+        left:8vw ;
+        top: 40vh;
+        border: 3px solid red;
+        border-radius: 20px;
+       background-color: aliceblue;
+       height: 7vh;
+        width: 35vw;
+        cursor: pointer;
+        font-weight: bold;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #lbase{
+        position: absolute;
+        left:24vw ;
+        top: 36.5vh;
+        background-color: rgb(175, 203, 36);
+         font-weight: bold;
+        
+      
+    }
+    #btn{
+        position: absolute;
+        left:8vw ;
+        top: 54vh;
+        border: 3px solid red;
+       background-color: aliceblue;
+       height: 7vh;
+        width: 35vw;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    option{
+        color: white;
+        background-color: rgb(173, 141, 101);
+
+    }
+    #res{
+        position: absolute;
+        left:8vw ;
+        top: 67vh;
+        border: 3px solid red;
+       background-color: aliceblue;
+       height: 7vh;
+        width: 35vw;
+       
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    #inpt:hover{
+        background-color: bisque;
+    }
+    #btn:hover{
+        background-color: bisque;
+    }
+    #base:hover{
+        background-color: bisque;
+    }
+    #base2:hover{
+        background-color: bisque;
+    }
+    @media screen and (max-width:912px){
+        *{
+            font-size: 2.2vh;
+            
+        }
+        #linpt{
+            visibility: hidden;
+        }
+        .cont{
+        position: relative;
+        top: 10vh;
+        height: 80vh;
+        width: 90vw;
+        
+    }
+    #base2 , #base , #btn , #res,#inpt,h3{
+       
+       height: 8vh;
+        width: 70vw;
+      
+       
+    }
+ 
+        #linpt{
+            top: 24.5vh;
+            left: 3vh;
+        }
+        #lbase{
+            top:37vh;
+            left: 40vw;
+        }
+        #lbase2{
+            top: 12vh;
+            left: 38vw;
+        }
+
+    }
+    
+    @media screen and (max-width:521px){
+        *{
+            font-size: 5vw;
+        }
+        
+    }
+    @media screen and (max-width:414px){
+        *{
+            font-size: 4vw;
+           
+        }
+       
+    }
+  
+  
+    @media screen and (max-height:413px){
+        .cont{
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+        }
+        #base2 , #base , #btn , #res,#inpt,h3{
+            height: 10vh;
+            width:90vw ;
+            
+        }
+        #lbase2,#lbase,#linpt{
+            visibility: hidden;
+        }
+       
+    }
