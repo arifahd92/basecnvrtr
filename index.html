@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAse CONVERTER</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASE CONVERTER</title>
     <script defer src="base.js"></script>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+    <link rel="stylesheet" href="base.css" />
+  </head>
 
-<body>
-   <div class="cont">
-     <h3>Number Base Converter </h3>
+  <body>
+    <div id="maincont">
+      <div class="cont">
+        <h3>Number Base Converter</h3>
+        <div id="labelcont">
+          <label for="base2" id="lbase2">From</label>
+          <label for="base" id="lbase">To</label>
+        </div>
+        <div id="select">
+          <select name="base2" id="base2">
+            <option value="16">HexaDecimal</option>
+            <option value="10">Decimal</option>
+            <option value="8">Octal</option>
+            <option value="2">Binary</option>
+          </select>
+          <select name="base" id="base">
+            <option value="16">HexaDecimal</option>
+            <option value="10">Decimal</option>
+            <option value="8">Octal</option>
+            <option value="2">Binary</option>
+          </select>
+        </div>
+        <div id="inptcont">
+          <input id="inpt" type="text" placeholder="INPUT  FIELD" min="0" />
+        </div>
+        <!-- <label for="base" id="lbase">To</label> -->
 
-     <label for="base2" id="lbase2">From</label>
-     <select name="base2" id="base2">
-        <option value="16">HexaDecimal</option>
-        <option value="10">Decimal</option>
-        <option value="8">Octal</option>
-        <option value="2">Binary</option>
-    </select>
-     <input id="inpt" type="text" placeholder="INPUT  FIELD" min="0" >
-     <label for="base" id="lbase">To</label>
-     <select name="base" id="base">
-        <option value="16">HexaDecimal</option>
-        <option value="10">Decimal</option>
-        <option value="8">Octal</option>
-        <option value="2">Binary</option>
-     </select>
+        <button id="btn">Convert</button>
 
-      <button id="btn">Convert</button>
-
-      <div id="res">result will be displayed here</div>
-   </div>
-
-</body>
+        <div id="res">result will be displayed here</div>
+      </div>
+    </div>
+  </body>
 </html>

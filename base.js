@@ -25,6 +25,11 @@ else{
   // console.log(typeof(base2.value))//string
    let num = dec2
   let v = +base.value//+operator for string to no.
+  console.log(isNaN(parseFloat(num)))
+  if(isNaN(parseFloat(num))){
+    res.innerText="result: "+"Enter valid no. and make sure the no. exist at selected base"
+  }
+  else
   res.innerText="result: "+num.toString(v)
 }
 })
