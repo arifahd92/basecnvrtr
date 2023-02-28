@@ -1,30 +1,39 @@
 let inpt = document.querySelector("#inpt")
 let btn = document.querySelector("#btn")
 let res = document.querySelector("#res")
-let base= document.querySelector("#base")
-let base2= document.querySelector("#base2")
+let tobase= document.querySelector("#tobase")
+let frmbase= document.querySelector("#frmbase")
 
 btn.addEventListener("click",function(){
- let sel = +base2.value
+  let frmbase= document.querySelector("#frmbase")
+ let sel = +frmbase.value
   // console.log(typeof(sel))// number
 if(sel ===10){
   let num = +inpt.value
-  let v = +base.value
+  console.log(num)
+  let v = +tobase.value
+  console.log(v)
   if (inpt.value===""){
       res.innerText="result: please enter value"  
   }
  else{
-  res.innerText="result: "+(+num.toString(v)).toFixed(5)
+  let actres=num.toString(v)
+  if(v==16){
+    res.innerText="result: " + (actres)
+  }
+  else{
+
+    res.innerText="result: " + (+actres).toFixed(4)
+  }
  }
 }
 else{
-  let bace = inpt.value;
-  // type of bace is string
-   let dec2 =   parseInt(bace,+base2.value)
-  //  console.log(typeof(dec2))// number
-  // console.log(typeof(base2.value))//string
+  let inputvalue= inpt.value;
+  // type of inputvalue is string
+   let dec2 =   parseInt(inputvalue,+frmbase.value)
+     //decimal equivalent of input at from base
    let num = dec2
-  let v = +base.value//+operator for string to no.
+  let v = +tobase.value//+operator for string to no.
   console.log(isNaN(parseFloat(num)))
   if(isNaN(parseFloat(num))){
     res.innerText="result: "+"Enter valid no. and make sure the no. exist at selected base"
