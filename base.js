@@ -3,7 +3,7 @@ let btn = document.querySelector("#btn")
 let res = document.querySelector("#res")
 let tobase= document.querySelector("#tobase")
 let frmbase= document.querySelector("#frmbase")
-
+let swap=document.querySelector(".wrap")
 btn.addEventListener("click",function(){
   let frmbase= document.querySelector("#frmbase")
  let sel = +frmbase.value
@@ -77,4 +77,11 @@ else{
   else
   res.innerText="result: "+num.toString(v)
 }
+})
+swap.addEventListener("click",()=>{
+  console.log("swap btn clicked")
+  let temp = tobase.value
+  tobase.value=frmbase.value
+  frmbase.value=temp
+  btn.click()
 })

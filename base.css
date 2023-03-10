@@ -81,6 +81,37 @@ select{
     border-radius: 10px;
     background-color: rgb(118, 118, 160);
 }
+.wrap,
+.innerwrap,
+.elm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+height: 38px;
+width: 38px;
+  border-radius: 50%;
+  background-color: rgb(158, 158, 159);
+  border-bottom:3px solid black;
+}
+.wrap:hover{
+    background-color: rgb(118, 118, 160);
+}
+.innerwrap {
+  height: 19.1px;
+  width: 19.1px;
+}
+.elm {
+  font-size: larger;
+  
+}
+.elm:hover{
+    cursor: pointer;
+
+}
 
 #inptcont{
     display: flex;
@@ -159,4 +190,8 @@ input:focus {
 h3{
     height: fit-content;
 }
+
+  select{
+    width: 38vw;
+  }
 }
